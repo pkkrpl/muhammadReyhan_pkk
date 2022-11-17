@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>find your cactus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        .swiper-slide>div:first-child {
+            border-radius: 10px;
+            background: #e0e0e0;
+            box-shadow: 11px 11px 22px #a4a4a4,
+                -11px -11px 22px #ffffff;
+
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screen: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440'
+                },
+                extend: {
+                    fontFamily: {
+                        popin: ['Poppins'],
+                        bil: ['Billabong'],
+                    },
+                    colors: {
+                        biru: '#11bbd1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="pb-[1000px] overflow-x-hidden">
+
+    <header class="bg-biru  w-full h-screen relative pt-20 overflow-hidden">
+        <h1 class="text-white text-center w-[80%] text-4xl font-extrabold m-auto p font-popin  md:text-5xl md:w-[75%] "
+            data-aos="fade-up" data-aos-duration="1500">
+            Temukan Semua Varian Kaktus Favorit Anda Sekarang
+        </h1>
+        <a href="#main">
+
+            <button
+                class="bg-white bg-opacity-70 z-30 font-bold text-[#252525] font-popin absolute bottom-10 w-[75%] sm:w-[50vw] left-1/2 -translate-x-1/2 py-1 rounded-xl">Get
+                Started</button>
+        </a>
+
+        <img src="wild_wild-talk_conoscere-i-cactus_16-ottobre-removebg-preview.png" alt="hero"
+            class=" bottom-16 -right-36 scale-[2] absolute z-10 sm:scale-[1.3] sm:bottom-10 sm:-right-64" />
+    </header>
+
+
+
+    <div class="main px-4 mt-8 sm:px-8 sm:pt-10" id="main">
+        <!-- /content -->
+        <div class="content">
+
+            <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500"
+                class="font-popin text-slate-400  text-left inline-block font-semibold text-xs m-auto font-popin  md:text-lg lg:text-xl ">
+                Hai, Semuanya</p>
+            <div
+                class="w-[30px] h-[30px] bg-slate-400 bg-opacity-80 rounded-full flex items-center justify-center float-right -translate-y-1">
+                <img src="asset/notification-4-line.svg" alt="lonceng">
+            </div>
+            <h1 class="mt-6 font-popin font-bold w-[80%] text-xl text-[#292929] sm:text-4xl lg:text-6xl"
+                data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500">Ayo Segera, Temukan
+                Kaktus Unik nya
+            </h1>
+        </div>
+
+        <!-- searcing -->
+        <div class="w-full flex justify-center items-center mt-8 h-[50px] sm:mt-12">
+            <input type="search" placeholder="Searcing"
+                class="px-6 py-1 rounded-[7px] w-[75%] focus:ring focus:ring-biru  border-none bg-slate-200 placeholder:font-popin placeholder:text-slate-400 md:py-2  lg:py-3">
+            <div
+                class="w-[30px] h-[30px] flex justify-center items-center ml-5 bg-biru rounded md:w-[40px] md:h-[40px]  lg:w-[50px] lg:h-[50px]">
+                <img src="asset/search-2-line.svg" alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- content -->
+        <div class=" w-full  content mt-20 ">
+            <h1 class="font-popin text-lg font-semibold mb-10">Paling Laris</h1>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/how-i-paid-off-student-loans-fast-683x1024.png" alt=""
+                                    class="-translate-y-20 md:-translate-y-40 md:scale-100">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus Hijau</h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$30</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden relative">
+                                <img src="asset/cactus1.jpg" alt=""
+                                    class="z-50 absolute bottom-3 scale-[1.3] left-0 right-0">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus Lonjong </h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$50</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/cactus2.jpg" alt="" class="-translate-y-4">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus bunga</h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$45</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/cactus3.jpg" alt="" class="translate-y-3 scale-150">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus Hijau</h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$50</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/cactus4.jpg" alt="" class="translate-y-3 scale-125">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus Lime</h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$35</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- content -->
+        <div class=" w-full  content mt-20 ">
+            <h1 class="font-popin text-lg font-semibold mb-10">Barang Baru</h1>
+
+            <div class="swiper mySwiper ">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide h">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/cactus5.jpg" alt="" class="-translate-y-5">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus Hijau</h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$50</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/cactus6.webp" alt="" class="-translate-y-10 ">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus Putih </h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$40</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/cactus7.jpg" alt="" class="-translate-y-10">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus batang</h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$55</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/how-i-paid-off-student-loans-fast-683x1024.png" alt=""
+                                    class="-translate-y-20">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus Hijau</h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$50</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="w-[150px] h-[200px] md:w-[300px] md:h-[300px] rounded-md bg-slate-300 overflow-hidden">
+                            <div class="w-full h-[125px] md:h-[200px] bg-emerald-500 overflow-hidden">
+                                <img src="asset/how-i-paid-off-student-loans-fast-683x1024.png" alt=""
+                                    class="-translate-y-20">
+                            </div>
+                            <div class="w-full h-[30px] p-2">
+                                <h1 class="font-popin text-slate-700">Kaktus Hijau</h1>
+                                <div class="h-[20px] w-full flex justify-between mt-4 px-2 items-center ">
+                                    <button class="font-popin font-bold">$50</button>
+                                    <button
+                                        class="w-[30px] h-[30px] rounded-full bg-slate-500 bg-opacity-50 flex justify-center items-center"><img
+                                            src="asset/heart-line.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !batas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <footer class="w-full bg-biru h-20 flex justify-center ">
+        <h1>creat by m r</h1>
+
+
+    </footer>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.addEventListener("scroll", (e) => {
+            console.info("fuck");
+        });
+
+        let hasil;
+        let ini = 3;
+        let lebar;
+        if (window.innerWidth < 480) {
+            hasil = true;
+            ini = 2;
+            lebar = 50;
+        } else if (window.innerWidth < 768) {
+            hasil = true;
+            ini = 3;
+            lebar = 50;
+        } else if (window.innerWidth > 768) {
+            hasil = true;
+            ini = 4;
+            lebar = 250;
+        } else {
+            lebar = 50;
+            hasil = false;
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: ini,
+            centeredSlides: hasil,
+            spaceBetween: lebar,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
